@@ -67,3 +67,63 @@ window.addEventListener('scroll', () => {
   }
 
 });
+// Typing Animation
+
+const typingText =
+  document.querySelector('.typing-text');
+
+const words = [
+  'Frontend Developer',
+  'UI Designer',
+  'Freelancer'
+];
+
+let wordIndex = 0;
+let charIndex = 0;
+let currentWord = '';
+let isDeleting = false;
+
+function typeEffect(){
+
+  currentWord = words[wordIndex];
+
+  if(!isDeleting){
+
+    typingText.textContent =
+      currentWord.substring(0,charIndex + 1);
+
+    charIndex++;
+
+    if(charIndex === currentWord.length){
+
+      isDeleting = true;
+
+      setTimeout(typeEffect,1000);
+
+      return;
+    }
+  }
+
+  else{
+
+    typingText.textContent =
+      currentWord.substring(0,charIndex - 1);
+
+    charIndex--;
+
+    if(charIndex === 0){
+
+      isDeleting = false;
+
+      wordIndex =
+        (wordIndex + 1) % words.length;
+    }
+  }
+
+  setTimeout(
+    typeEffect,
+    isDeleting ? 60 : 120
+  );
+}
+
+typeEffect();
