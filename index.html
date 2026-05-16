@@ -1,4 +1,6 @@
 <!-- index.html -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <!DOCTYPE html>
 <html lang="en">
@@ -33,33 +35,54 @@
   </header>
 
   <!-- Hero -->
-  <section class="hero" id="home">
+ <section class="hero" id="home">
 
-    <div class="hero-content">
-       <img src="profile.jpg"
-     alt="Profile Photo"
-     class="profile-img">
+  <div class="hero-left">
 
+    <p class="small-text">
+      Hello, I'm
+    </p>
 
-      <p class="small-text">Hello, I'm</p>
+    <h1>Vignesh M</h1>
 
-      <h1>Vignesh M</h1>
+    <h2 class="gradient-text">
+      Front-End Developer
+    </h2>
 
-      <h2>Front-End Developer</h2>
+    <p class="description">
+      Creating premium modern websites with
+      smooth animations and clean UI experience.
+    </p>
 
-      <p class="description">
-        Creating modern, responsive and premium websites
-        with clean user experience.
-      </p>
+    <div class="buttons">
 
-      <div class="buttons">
-        <a href="#contact" class="btn primary">Contact Me</a>
-        <a href="#about" class="btn secondary">Explore</a>
-      </div>
+      <a href="#contact"
+         class="btn primary">
+         Contact Me
+      </a>
+
+      <a href="#projects"
+         class="btn secondary">
+         View Projects
+      </a>
 
     </div>
 
-  </section>
+  </div>
+
+  <div class="hero-right">
+
+    <div class="image-circle">
+
+      <img src="profile.jpg"
+           alt="Profile"
+           class="profile-img">
+
+    </div>
+
+  </div>
+
+</section>
 
  
   <!-- About -->
@@ -80,19 +103,45 @@
   <!-- Skills -->
   <section class="skills section" id="skills">
 
-    <h2 class="section-title">Skills</h2>
+  <h2 class="section-title">Skills</h2>
 
-    <div class="skills-grid">
+  <div class="skills-grid">
 
-      <div class="skill-card">HTML5</div>
+    <!-- HTML -->
 
-      <div class="skill-card">CSS3</div>
+    <div class="skill-card">
 
-      <div class="skill-card">Frontend Development</div>
+      <i class="fa-brands fa-html5"></i>
+
+      <h3>HTML5</h3>
 
     </div>
 
-  </section>
+    <!-- CSS -->
+
+    <div class="skill-card">
+
+      <i class="fa-brands fa-css3-alt"></i>
+
+      <h3>CSS3</h3>
+
+    </div>
+
+ 
+
+    <!-- Frontend -->
+
+    <div class="skill-card">
+
+      <i class="fa-solid fa-code"></i>
+
+      <h3>Frontend Dev</h3>
+
+    </div>
+
+  </div>
+
+</section>
 
   <!-- Services -->
   <section class="services section" id="services">

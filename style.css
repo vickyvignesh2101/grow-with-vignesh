@@ -557,4 +557,152 @@ textarea::placeholder{
   transform:translateY(-5px);
 
   background:rgba(255,255,255,0.1);
+}/* Hero Layout */
+
+.hero{
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  min-height:100vh;
+
+  padding:120px 8%;
+
+  gap:60px;
+
+  flex-wrap:wrap;
+}
+
+.hero-left{
+
+  flex:1;
+}
+
+.hero-right{
+
+  flex:1;
+
+  display:flex;
+
+  justify-content:center;
+}
+
+/* Gradient Text */
+
+.gradient-text{
+
+  background:linear-gradient(
+    135deg,
+    #38bdf8,
+    #6366f1,
+    #a855f7
+  );
+
+  -webkit-background-clip:text;
+
+  -webkit-text-fill-color:transparent;
+}
+
+/* Profile Image */
+
+.image-circle{
+
+  width:380px;
+
+  height:380px;
+
+  border-radius:50%;
+
+  padding:10px;
+
+  background:linear-gradient(
+    135deg,
+    #38bdf8,
+    #6366f1,
+    #a855f7
+  );
+
+  animation:floatImage 4s ease-in-out infinite;
+
+  box-shadow:0 20px 80px rgba(99,102,241,0.35);
+}
+
+.profile-img{
+
+  width:100%;
+
+  height:100%;
+
+  object-fit:cover;
+
+  border-radius:50%;
+
+  border:6px solid #050505;
+}
+
+/* Floating Animation */
+
+@keyframes floatImage{
+
+  0%{
+    transform:translateY(0px);
+  }
+
+  50%{
+    transform:translateY(-20px);
+  }
+
+  100%{
+    transform:translateY(0px);
+  }
+}
+@media(max-width:768px){
+
+  .hero{
+
+    flex-direction:column-reverse;
+
+    text-align:center;
+
+    padding-top:140px;
+  }
+
+  .image-circle{
+
+    width:260px;
+
+    height:260px;
+  }
+
+  .hero h1{
+
+    font-size:3rem;
+  }
+}
+/* Skill Icons */
+
+.skill-card i{
+
+  font-size:3rem;
+
+  margin-bottom:20px;
+
+  background:linear-gradient(
+    135deg,
+    #38bdf8,
+    #6366f1,
+    #a855f7
+  );
+
+  -webkit-background-clip:text;
+
+  -webkit-text-fill-color:transparent;
+}
+
+.skill-card h3{
+
+  font-size:1.1rem;
 }
