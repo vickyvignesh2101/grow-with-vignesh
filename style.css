@@ -1398,3 +1398,13 @@ textarea::placeholder{
 
   z-index:-1;
 }
+/* Contact Icons */
+
+.contact-info i{
+
+  margin-right:10px;
+
+  color:#E1306C;
+
+  font-size:1.1rem;
+}
